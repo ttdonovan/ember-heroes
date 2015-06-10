@@ -1,7 +1,8 @@
-# Heroes
+# Heroes: Ember.js and Marvel API
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is an app built to explore Ember application development with the Marvel
+API. It uses the Marvel API to list and search the Marvel character database
+via their API.
 
 ## Prerequisites
 
@@ -15,10 +16,14 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone git@github.com:ttdonovan/ember-heroes.git`
+* `cd ember-heroes`
 * `npm install`
 * `bower install`
+
+## Marvel API
+
+To access the Marvel database an API key can be acquired from: [http://developer.marvel.com]()
 
 ## Running / Development
 
@@ -41,13 +46,4 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+See [http://www.ember-cli.com/#deployments]() for deployment options.
