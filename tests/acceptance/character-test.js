@@ -4,7 +4,7 @@ import startApp from 'heroes/tests/helpers/start-app';
 
 let application;
 
-module('Acceptance | Characters', {
+module('Acceptance | Character', {
   beforeEach: function() {
     application = startApp();
   },
@@ -14,16 +14,13 @@ module('Acceptance | Characters', {
   }
 });
 
-test('visiting /', function(assert) {
+test('visiting /character/1009610 show character detail for Spider-Man', function(assert) {
   assert.expect(2);
 
-  visit('/');
-  click('a:contains(Characters)');
+  visit('/characters/1009610');
 
   andThen(function() {
-    assert.equal(currentURL(), '/characters');
-
-    const characters = find('.character');
-    assert.equal(characters.length, 20);
+    assert.equal(currentURL(), '/characters/1009610');
+    assert.equal(find('h2:contains("Spider-Man")').length, 1);
   });
 });

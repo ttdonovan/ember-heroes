@@ -6,6 +6,6 @@ moduleFor('route:characters/index', 'Unit | Route | characters/index', {
 });
 
 test('it exists', function(assert) {
-  var route = this.subject();
+  const route = this.subject();
   assert.ok(route);
 });

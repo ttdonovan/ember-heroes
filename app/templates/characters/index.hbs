@@ -1,6 +1,5 @@
 {{#each model as |character|}}
   <p class="character">
-    {{character.name}}
-    <small>{{character.resourceURI}}</small>
+    {{link-to character.name 'characters.show' character.id}}
   </p>
 {{/each}}

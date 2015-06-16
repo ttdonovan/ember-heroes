@@ -6,7 +6,7 @@ moduleFor('service:marvel', 'Unit | Service | marvel', {
 });
 
 test('it has a signature', function(assert) {
-  var service = this.subject();
+  const service = this.subject();
   service.setKey('MARVEL_API_PUBLIC_KEY');
   assert.ok(service.get('signature').match(/\?ts=\d+\&apikey=MARVEL_API_PUBLIC_KEY\&hash=[a-z0-9]+/));
 });
