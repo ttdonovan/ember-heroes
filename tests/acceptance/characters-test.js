@@ -15,7 +15,7 @@ module('Acceptance | characters', {
 });
 
 test('visiting /', function(assert) {
-  assert.expect(6);
+  assert.expect(2);
 
   visit('/');
   click('a:contains(Characters)');
@@ -24,11 +24,6 @@ test('visiting /', function(assert) {
     assert.equal(currentURL(), '/characters');
 
     let characters = find('.character');
-    assert.equal(characters.length, 4);
-
-    assert.equal(find('.character:contains(Spider-Man)').length, 1);
-    assert.equal(find('.character:contains(Avengers)').length, 1);
-    assert.equal(find('.character:contains(Iron Man)').length, 1);
-    assert.equal(find('.character:contains(Hulk)').length, 1);
+    assert.equal(characters.length, 20);
   });
 });

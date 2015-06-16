@@ -25,6 +25,13 @@ You will need the following things properly installed on your computer.
 
 To access the Marvel database an API key can be acquired from: [http://developer.marvel.com]()
 
+Create a `.env` file at the root of the project directory:
+
+```
+MARVEL_API_PUBLIC_KEY=your-marvel-api-public-key
+MARVEL_API_PRIVATE_KEY=your-marvel-api-private-key
+```
+
 ## Running / Development
 
 * `ember server`

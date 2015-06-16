@@ -16,7 +16,14 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    contentSecurityPolicy: {
+      'connect-src': "'self' gateway.marvel.com"
+    },
+
+    marvelApiPublicKey: process.env.MARVEL_API_PUBLIC_KEY,
+    marvelApiPrivateKey: process.env.MARVEL_API_PRIVATE_KEY
   };
 
   if (environment === 'development') {
