@@ -19,7 +19,9 @@ module.exports = function(environment) {
     },
 
     contentSecurityPolicy: {
-      'connect-src': "'self' gateway.marvel.com"
+      'connect-src': "'self' gateway.marvel.com",
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' fonts.googleapis.com",
     },
 
     marvelApiPublicKey: process.env.MARVEL_API_PUBLIC_KEY,

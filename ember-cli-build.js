@@ -20,6 +20,8 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   app.import('bower_components/blueimp-md5/js/md5.js');
+  app.import('bower_components/material-design-lite/material.css');
+  app.import('bower_components/material-design-lite/material.js');
 
   return app.toTree();
 };
