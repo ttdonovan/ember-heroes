@@ -1,0 +1,98 @@
+{
+  "stats": {
+    "suites": 26,
+    "tests": 29,
+    "passes": 29,
+    "pending": 0,
+    "failures": 0,
+    "start": "2015-07-15T15:42:44.424Z",
+    "end": "2015-07-15T15:42:49.827Z"
+  },
+  "coverage": {
+    "total": {
+      "statementsTotal": 81,
+      "statementsCovered": 74,
+      "percentage": 91.36
+    },
+    "files": [
+      {
+        "name": "heroes/app",
+        "statementsTotal": 7,
+        "statementsCovered": 7,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/config/environment",
+        "statementsTotal": 8,
+        "statementsCovered": 1,
+        "percentage": 12.5
+      },
+      {
+        "name": "heroes/initializers/export-application-global",
+        "statementsTotal": 8,
+        "statementsCovered": 8,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/instance-initializers/app-version",
+        "statementsTotal": 9,
+        "statementsCovered": 9,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/router",
+        "statementsTotal": 7,
+        "statementsCovered": 7,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/models/character",
+        "statementsTotal": 3,
+        "statementsCovered": 3,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/routes/characters/index",
+        "statementsTotal": 7,
+        "statementsCovered": 7,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/controllers/characters/index",
+        "statementsTotal": 3,
+        "statementsCovered": 3,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/adapters/application",
+        "statementsTotal": 4,
+        "statementsCovered": 4,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/services/marvel",
+        "statementsTotal": 10,
+        "statementsCovered": 10,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/serializers/character",
+        "statementsTotal": 9,
+        "statementsCovered": 9,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/controllers/object",
+        "statementsTotal": 3,
+        "statementsCovered": 3,
+        "percentage": 100
+      },
+      {
+        "name": "heroes/controllers/array",
+        "statementsTotal": 3,
+        "statementsCovered": 3,
+        "percentage": 100
+      }
+    ]
+  }
+}
