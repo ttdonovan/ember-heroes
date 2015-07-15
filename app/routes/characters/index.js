@@ -9,11 +9,11 @@ export default Ember.Route.extend({
 
   model(params) {
     if (Ember.isPresent(params.search)) {
-      return this.store.find('character', {
+      return this.store.query('character', {
         nameStartsWith: params.search
       });
     } else {
-      return this.store.find('character');
+      return this.store.findAll('character');
     }
   },
 

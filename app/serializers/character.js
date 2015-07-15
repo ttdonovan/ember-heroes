@@ -1,15 +1,17 @@
 import DS from 'ember-data';
 
 export default DS.RESTSerializer.extend({
-  extract(store, type, payload, id, requestType) {
+  isNewSerializerAPI: true,
+
+  normalizeResponse(store, primaryModelClass, payload, id, requestType) {
     const results = {};
     results['characters'] = payload.data.results;
-    return this._super(store, type, results, id, requestType);
+    return this._super(store, primaryModelClass, results, id, requestType);
   },
 
-  extractSingle(store, type, payload, id) {
+  normalizeSingleResponse(store, primaryModelClass, payload, id) {
     const results = {};
     results['character'] = payload.characters[0];
-    return this._super(store, type, results, id);
+    return this._super(store, primaryModelClass, results, id);
   }
 });
