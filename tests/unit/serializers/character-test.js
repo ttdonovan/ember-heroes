@@ -2,7 +2,7 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('character', 'Unit | Serializer | character', {
   // Specify the other units that are required for this test.
-  needs: ['serializer:character']
+  needs: ['serializer:character', 'transform:thumbnail']
 });
 
 // Replace this with your real tests.
